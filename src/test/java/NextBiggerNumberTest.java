@@ -10,5 +10,7 @@ public class NextBiggerNumberTest {
         assertEquals(2071, NextBiggerNumber.nextBiggerNumber(2017));
         assertEquals(441, NextBiggerNumber.nextBiggerNumber(414));
         assertEquals(414, NextBiggerNumber.nextBiggerNumber(144));
+        assertEquals(332071, NextBiggerNumber.nextBiggerNumber(332017));
+
     }
 }
