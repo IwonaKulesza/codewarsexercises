@@ -26,7 +26,6 @@ public class Josephus {
             list.addAll(temporaryList);
             temporaryList.clear();
         }
-
         return result;
     }
 }
