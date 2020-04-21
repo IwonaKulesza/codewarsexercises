@@ -3,7 +3,6 @@ import java.util.List;
 
 public class Josephus {
     public static <T> List<T> josephusPermutation(final List<T> items, final int k) {
-
         List temporaryList = new ArrayList<T>();
         List result = new ArrayList<T>();
         List list = items;
