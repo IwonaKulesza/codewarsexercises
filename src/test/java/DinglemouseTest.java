@@ -1,16 +1,16 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-public class ExampleTests {
+public class DinglemouseTest {
 
     private String[] BEFORE(String[] a) {
         System.out.println("Before:");
-        return Preloaded.prettyPrint(a);
+        return (a);
     }
 
     private String[] AFTER(String[] a) {
         System.out.println("After:");
-        return Preloaded.prettyPrint(a);
+        return (a);
     }
 
     @Test
