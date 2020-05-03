@@ -13,10 +13,10 @@ public class JosephusTest {
 //        josephusTest(new Object[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, 1, new Object[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10});
 //    }
 
-        @Test
-        public void test2() {
-            josephusTest(new Object[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, 2, new Object[]{2, 4, 6, 8, 10, 3, 7, 1, 9, 5});
-        }
+//        @Test
+//        public void test2() {
+//            josephusTest(new Object[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, 2, new Object[]{2, 4, 6, 8, 10, 3, 7, 1, 9, 5});
+//        }
 
 //        @Test
 //        public void test3() {
@@ -33,7 +33,33 @@ public class JosephusTest {
    //     josephusTest(new Object[]{}, 3, new Object[]{});
    // }
 
-    private void josephusTest(final Object[] items, final int k, final Object[] result) {
-        assertThat(Josephus.josephusPermutation(new ArrayList(Arrays.asList(items)), k), is(Arrays.asList(result)));
+//    private void josephusTest(final Object[] items, final int k, final Object[] result) {
+//        assertThat(Josephus.josephusPermutation(new ArrayList(Arrays.asList(items)), k), is(Arrays.asList(result)));
+//    }
+
+    @Test
+    public void addNode() {
+        Josephus josephus = new Josephus();
+        Josephus.CircularLinkedList list = josephus.new CircularLinkedList();
+
+        list.addNode(new String("bla bla"));
+        list.addNode(new String("bla bla 2"));
+        list.addNode(new String("bla bla 3"));
+
+        list.listNodes();
+        System.out.println(list.countNodes());
+
+
+        Josephus.Node node = list.getHead();
+        node = node.nextNode;
+        list.deleteNode(node);
+
+        list.listNodes();
+        System.out.println(list.countNodes());
+
+    }
+
+    @Test
+    public void deleteNode() {
     }
 }
