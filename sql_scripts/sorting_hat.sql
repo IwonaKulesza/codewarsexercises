@@ -1,4 +1,4 @@
-/*Description:
+/* Description:
 
   There is truly no magic in the world; the Hogwarts Sorting Hat is SQL-based, its decision-making powers are common operators and prospectIve students are merely data - names, and two columns of qualities.
 
