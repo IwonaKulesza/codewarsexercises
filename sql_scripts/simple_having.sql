@@ -10,7 +10,7 @@ return table schema
 
     age
     total_people
-
+:sp
 /*
 
 SELECT age, COUNT(*) as total_people
